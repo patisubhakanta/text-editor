@@ -16,3 +16,6 @@ Your app is ready to be deployed!
 ### `Deployed URL`
 
 https://text-editor-flax-one.vercel.app/
+
+![image](https://github.com/user-attachments/assets/497716be-48c4-477d-9b4a-add0e28fa11d)
+
