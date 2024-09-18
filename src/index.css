@@ -7,6 +7,7 @@
   font-size: 16px;
 }
 
-.custom-quill-editor .ql-editor p span {
- padding :4px;
+.custom-quill-editor .ql-editor p span,
+.custom-quill-editor .ql-editor p strong {
+  padding: 4px;
 }

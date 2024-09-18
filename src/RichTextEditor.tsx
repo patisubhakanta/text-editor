@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { FaBold, FaStar, FaComment, FaUndo, FaRedo } from 'react-icons/fa';
-import { Console } from 'console';
 
 type MessgeDTO = {
     id: number;
@@ -25,8 +24,6 @@ const RichTextEditor: React.FC = () => {
     const sliderRef = useRef<HTMLDivElement>(null);
     const [message, setMessage] = useState<MessgeDTO[]>([])
     const [showMessage, setShowMessage] = useState<String | null>(null)
-
-    console.log(message)
 
 
     const getSliderColor = (value: number): string => {
@@ -65,6 +62,8 @@ const RichTextEditor: React.FC = () => {
                     setShowToolbar(false);
                     setShowSlider(false);
                     setShowMessage(null);
+                    setSliderValue(0)
+                    setBgColor("fffff")
                 }
             });
             editor.root.addEventListener('click', (event) => {
@@ -97,6 +96,8 @@ const RichTextEditor: React.FC = () => {
                 setShowSlider(false);
                 setShowToolbar(false);
                 setShowMessage(null);
+                setSliderValue(0);
+                setBgColor("fffff");
             }
         };
 
